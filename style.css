@@ -52,11 +52,10 @@ button:hover {
 }
 
 .quiz-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  flex-direction: column;
+  position: absolute;
+  top: 15%; /* 往上移動 */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .card {
