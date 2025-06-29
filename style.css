@@ -6,9 +6,15 @@ body {
   margin: 0;
   padding: 2rem;
 }
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
 .logo img {
   height: 80px;
-  margin-bottom: 1rem;
 }
 .quiz-container {
   background: rgba(255, 255, 255, 0.95);
