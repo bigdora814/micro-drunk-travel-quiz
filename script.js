@@ -6,12 +6,12 @@ const questions = [
   },
   {
     q: "你偏好哪種飲品？",
-    options: ["梅酒", "生啤酒", "紅酒", "不喝酒"],
+    options: ["梅酒", "清爽啤酒", "紅酒", "不喝酒"],
     score: ["relax", "social", "art", "adventure"]
   },
   {
     q: "你最愛的房型風格是？",
-    options: ["湯屋", "帳篷", "閱讀空間", "高樓夜景"],
+    options: ["湯屋", "家庭親子", "閱讀空間", "高樓夜景"],
     score: ["relax", "adventure", "art", "social"]
   }
 ];
