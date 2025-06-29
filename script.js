@@ -41,12 +41,25 @@ function showResult() {
   document.getElementById("quiz").style.display = "none";
   let max = Object.entries(scoreMap).sort((a,b)=>b[1]-a[1])[0][0];
   const resultMap = {
-    relax: "你是【療癒系旅人】！推薦入住：日式湯屋＋星光梅酒",
-    adventure: "你是【冒險系旅人】！推薦入住：山林帳篷＋戶外啤酒",
-    art: "你是【文藝系旅人】！推薦入住：閱讀客房＋紅酒午茶",
-    social: "你是【社交系旅人】！推薦入住：高樓景觀房＋深夜宵夜酒"
+    relax: {
+      text: "你是【療癒系旅人】！推薦入住：日式湯屋＋星光梅酒",
+      img: "images/relax.jpg"
+    },
+    adventure: {
+      text: "你是【冒險系旅人】！推薦入住：山林帳篷＋戶外啤酒",
+      img: "images/adventure.jpg"
+    },
+    art: {
+      text: "你是【文藝系旅人】！推薦入住：閱讀客房＋紅酒午茶",
+      img: "images/art.jpg"
+    },
+    social: {
+      text: "你是【社交系旅人】！推薦入住：高樓景觀房＋深夜宵夜酒",
+      img: "images/social.jpg"
+    }
   };
-  document.getElementById("result").innerHTML = "<h2>" + resultMap[max] + "</h2>";
+  const res = resultMap[max];
+  document.getElementById("result").innerHTML = `<h2>${res.text}</h2><img src="${res.img}" alt="result" class="result-img" />`;
   document.getElementById("result").style.display = "block";
   document.getElementById("form").style.display = "block";
 }
