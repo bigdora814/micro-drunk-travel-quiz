@@ -16,8 +16,11 @@ body {
   left: 0;
   min-width: 100vw;
   min-height: 100vh;
-  object-fit: **contain**; /* 原本是 cover，可試試這個 */
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 原本是 cover，改成 contain */
   z-index: -1;
+  background-color: black; /* 若比例不符會出現黑邊，可自行調整顏色 */
 }
 
 .logo img {
