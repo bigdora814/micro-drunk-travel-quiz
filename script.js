@@ -7,17 +7,17 @@ const questions = [
   {
     q: "你偏好哪種飲品？",
     options: ["梅酒", "清爽啤酒", "紅酒", "不喝酒"],
-    score: ["relax", "social", "art", "adventure"]
+    score: ["relax", "social", "art", "family"]
   },
   {
     q: "你最愛的房型風格是？",
     options: ["湯屋", "家庭親子", "閱讀空間", "高樓夜景"],
-    score: ["relax", "social", "art", "adventure"]
+    score: ["relax", "family", "art", "social"]
   }
 ];
 
 let current = 0;
-let scoreMap = {relax: 0, adventure: 0, art: 0, social: 0};
+let scoreMap = {relax: 0, family: 0, art: 0, social: 0};
 
 function renderQuestion() {
   const q = questions[current];
@@ -45,11 +45,11 @@ function showResult() {
       img: "images/relax.jpg"
     },
     adventure: {
-      text: "你是【冒險系旅人】！推薦入住：尊爵套房＋不醉探險",
+      text: "你是【親子系旅人】！推薦入住：尊爵套房＋不醉探險",
       img: "images/adventure.jpg"
     },
     art: {
-      text: "你是【文藝系旅人】！推薦入住：和風精緻房＋紅酒午茶",
+      text: "你是【文青系旅人】！推薦入住：和風精緻房＋紅酒午茶",
       img: "images/art.jpg"
     },
     social: {
