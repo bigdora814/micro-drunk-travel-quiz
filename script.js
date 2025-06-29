@@ -1,4 +1,3 @@
-
 const questions = [
   {
     q: "假日你最想做什麼？",
@@ -39,7 +38,7 @@ function renderQuestion() {
 
 function showResult() {
   document.getElementById("quiz").style.display = "none";
-  let max = Object.entries(scoreMap).sort((a,b)=>b[1]-a[1])[0][0];
+  let max = Object.entries(scoreMap).sort((a, b) => b[1] - a[1])[0][0];
   const resultMap = {
     relax: {
       text: "你是【療癒系旅人】！推薦入住：景觀套房＋星光梅酒",
@@ -64,7 +63,14 @@ function showResult() {
   document.getElementById("form").style.display = "block";
 }
 
+// 啟動測驗與觸發影片播放
 document.getElementById("startBtn").addEventListener("click", function () {
   document.getElementById("startBtn").style.display = "none";
   renderQuestion();
+
+  // 嘗試播放背景影片（需互動觸發）
+  const bgvid = document.getElementById("bgvid");
+  if (bgvid && bgvid.paused) {
+    bgvid.play().catch(e => console.log("背景影片播放失敗：", e));
+  }
 });
