@@ -1,8 +1,8 @@
 const questions = [
   {
     q: "假日你最想做什麼？",
-    options: ["泡湯放空", "登山健身", "文青散步", "夜市美食"],
-    score: ["relax", "adventure", "art", "social"]
+    options: ["泡湯放空", "親子時光", "文青散步", "夜市美食"],
+    score: ["relax", "family", "art", "social"]
   },
   {
     q: "你偏好哪種飲品？",
