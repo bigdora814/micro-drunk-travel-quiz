@@ -41,19 +41,19 @@ function showResult() {
   let max = Object.entries(scoreMap).sort((a,b)=>b[1]-a[1])[0][0];
   const resultMap = {
     relax: {
-      text: "你是【療癒系旅人】！推薦入住：日式湯屋＋星光梅酒",
+      text: "你是【療癒系旅人】！推薦入住：景觀套房＋星光梅酒",
       img: "images/relax.jpg"
     },
     family: {
-      text: "你是【親子系旅人】！推薦入住：親子房＋北寶貝禮包",
+      text: "你是【親子系旅人】！推薦入住：尊爵親子房＋貝貝佳寶貝禮包",
       img: "images/family.jpg"
     },
     art: {
-      text: "你是【文藝系旅人】！推薦入住：閱讀空間＋紅酒午茶",
+      text: "你是【文藝系旅人】！推薦入住：尊爵套房＋紅酒午茶",
       img: "images/art.jpg"
     },
     social: {
-      text: "你是【社交系旅人】！推薦入住：高樓夜景房＋深夜宵夜酒",
+      text: "你是【社交系旅人】！推薦入住：尊爵套房＋深夜宵夜酒",
       img: "images/social.jpg"
     }
   };
