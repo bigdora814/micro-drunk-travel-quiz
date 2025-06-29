@@ -14,9 +14,9 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: **contain**; /* 原本是 cover，可試試這個 */
   z-index: -1;
 }
 
